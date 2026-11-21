@@ -9,7 +9,7 @@ from homeassistant.helpers import config_validation as cv
 TPLINK_DOMAIN = "tplink"
 
 CONTROL_PORT = "control_port"
-PYTAPO_REQUIRED_VERSION = "3.4.32"
+PYTAPO_REQUIRED_VERSION = "3.4.34"
 DOMAIN = "tapo_control"
 DOMAIN_CONFIG = DOMAIN + "_config"
 BRAND = "TP-Link"
@@ -84,6 +84,7 @@ MEDIA_VIEW_DAYS_ORDER_OPTIONS = ["Ascending", "Descending"]
 MEDIA_VIEW_RECORDINGS_ORDER_OPTIONS = ["Ascending", "Descending"]
 
 ENABLE_WEBHOOKS = "enable_webhooks"
+# Legacy key retained for migrations; camera streaming is always enabled.
 ENABLE_STREAM = "enable_stream"
 ENABLE_SOUND_DETECTION = "enable_sound_detection"
 SOUND_DETECTION_PEAK = "sound_detection_peak"
